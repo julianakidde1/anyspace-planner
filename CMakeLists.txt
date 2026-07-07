@@ -7,5 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #adding raylib as a dependency
 find_package(raylib REQUIRED)
 
-add_executable(game build_test.cpp)
+add_executable(game main.cpp)
 target_link_libraries(game PRIVATE raylib)
