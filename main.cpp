@@ -15,7 +15,7 @@ int main() {
 
         BeginDrawing(); //the render(state) is in this block 
         ClearBackground(RAYWHITE);
-        DrawText("it works", 320, 200, 20, DARKGRAY);
+        DrawText("Welcome to GAM", 320, 200, 20, DARKGRAY);
         EndDrawing();
     }
     CloseWindow();
