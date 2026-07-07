@@ -2,8 +2,18 @@
 
 int main() {
     InitWindow(800, 450, "GAM");
+    SetTargetFPS(60);
+
+    // GameState state = initState();   // game state lives out here
+    
     while (!WindowShouldClose()) {
-        BeginDrawing();
+        float dt = GetFrameTime();       // getting dt fromraylib
+       
+        //--main game loop logic 
+        // input = readInput();              // poll: IsKeyDown, GetMousePosition, ... e.t.c
+        // state = updateState(state, input, dt);   // the  update step
+
+        BeginDrawing(); //the render(state) is in this block 
         ClearBackground(RAYWHITE);
         DrawText("it works", 320, 200, 20, DARKGRAY);
         EndDrawing();
