@@ -1,0 +1,16 @@
+build/
+*.o
+*.out
+
+# tests/doctest.h
+
+# macOS junk
+.DS_Store
+
+# Editor config — ignore the dir, whitelist the shareable bits
+.vscode/*
+!.vscode/extensions.json
+
+# CMake sometimes drops these at the root
+CMakeCache.txt
+CMakeFiles/
