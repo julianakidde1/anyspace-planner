@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(GAM CXX)
+project(ConsumerGame CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,5 +11,5 @@ target_include_directories(planning INTERFACE include)
 #adding raylib as a dependency
 find_package(raylib REQUIRED)
 
-add_executable(game main.cpp)
+add_executable(game consumer/consumer-game/main.cpp)
 target_link_libraries(game PRIVATE planning raylib)
