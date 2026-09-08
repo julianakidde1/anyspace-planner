@@ -11,5 +11,5 @@ target_include_directories(planning INTERFACE include)
 #adding raylib as a dependency
 find_package(raylib REQUIRED)
 
-add_executable(game consumer/consumer-game/main.cpp)
+add_executable(game consumers/consumer-game/main.cpp)
 target_link_libraries(game PRIVATE planning raylib)
