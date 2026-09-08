@@ -1,5 +1,5 @@
 namespace planning {
-
+//---vector2d--------
     struct vector2d {
         double x,y = 0.0;
     };
@@ -14,6 +14,8 @@ namespace planning {
     vector2d operator*(vector2d a, double scalar){
         return {a.x * scalar, a.y * scalar};
     }
+
+//---state-------------
 
     struct State {
         double x = 0.0;
